@@ -13,6 +13,6 @@
   "license": "MIT",
   "ignore": [
     "node_modules",
-    "test",
+    "test"
   ]
 }
