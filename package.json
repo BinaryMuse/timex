@@ -4,6 +4,8 @@
   "description": "Small timer module using requestAnimationFrame and performance.now/process.hrtime when available",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --output-library Timex --output-library-target umd index.js build/timex.js",
+    "build-min": "webpack --output-library Timex --output-library-target umd -p index.js build/timex.min.js",
     "test-node": "node test/node.js",
     "test-browser": "beefy test/browser.js"
   },
@@ -18,6 +20,7 @@
   },
   "devDependencies": {
     "beefy": "^2.1.3",
-    "browserify": "^8.1.3"
+    "browserify": "^8.1.3",
+    "webpack": "^1.5.3"
   }
 }

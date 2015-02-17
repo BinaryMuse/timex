@@ -15,7 +15,13 @@ You can then require it as normal:
     var Timex = require("timex");
     var timer = new Timex();
 
-Timex works with browser module bundlers like Browserify and webpack.
+Timex is also available on Bower:
+
+    bower install [--save] timex
+
+**Note:** You should *only* use the Bower version in the browser.
+
+Timex also works with browser module bundlers like Browserify and webpack.
 
 Usage
 -----
