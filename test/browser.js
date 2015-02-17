@@ -9,11 +9,11 @@ document.documentElement.appendChild(div2);
 
 var updateDoc1 = function(time) {
   div1.textContent = "" + time;
-}
+};
 
 var updateDoc2 = function(time) {
   div2.textContent = "" + time;
-}
+};
 
 timer.register(updateDoc1)
 timer.register(updateDoc2)
