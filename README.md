@@ -1,7 +1,7 @@
 Timex
 =====
 
-Timex is a small timer module that uses `requestAnimationFrame` and `performance.now()` for high-accuracy timing when possible. The timer can be paused and resumed, and set to an arbitrary time.
+Timex is a small timer module that uses `requestAnimationFrame` and `performance.now()` (or `process.hrtime` in Node) for high-accuracy timing when possible. The timer can be paused and resumed, and set to an arbitrary time.
 
 Installation
 ------------
@@ -32,13 +32,15 @@ Starts the timer. `startAt` can optionally be passed to set the timer to a given
 
 Pauses the timer.
 
-**`Timex#set([ms])`**
+**`Timex#set(ms)`**
 
 Sets the timer's current time (in milliseconds).
 
 **`Timex#register(function(time){})`**
 
 Registers a callback that gets called each time the timer ticks. The callback receives the current time of the timer as its only argument.
+
+Note that the time will be a float when high-precision times are available (e.g. when using `performance.now`).
 
 **`Timex#unregister(function(time){})`**
 

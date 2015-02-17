@@ -1,14 +1,5 @@
-var raf = require("raf");
-
-function now() {
-  if (this.performance && this.performance.now) {
-    return this.performance.now();
-  } else if (Date.now) {
-    return Date.now();
-  } else {
-    return new Date().getTime();
-  }
-}
+var raf = require("raf"),
+    now = require("performance-now");
 
 function Timer() {
   this.running = false;

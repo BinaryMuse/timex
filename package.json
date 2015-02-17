@@ -1,7 +1,7 @@
 {
   "name": "timex",
-  "version": "1.0.0",
-  "description": "Small timer module using requestAnimationFrame and performance.now when available",
+  "version": "1.0.1",
+  "description": "Small timer module using requestAnimationFrame and performance.now/process.hrtime when available",
   "main": "index.js",
   "scripts": {
     "test-node": "node test/node.js",
@@ -13,6 +13,7 @@
   "author": "BinaryMuse",
   "license": "MIT",
   "dependencies": {
+    "performance-now": "^0.2.0",
     "raf": "^2.0.4"
   },
   "devDependencies": {
