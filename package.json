@@ -1,6 +1,6 @@
 {
   "name": "timex",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Small timer module using requestAnimationFrame and performance.now/process.hrtime when available",
   "main": "index.js",
   "scripts": {
