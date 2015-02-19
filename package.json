@@ -9,6 +9,11 @@
     "test-node": "node test/node.js",
     "test-browser": "beefy test/browser.js"
   },
+  "homepage": "https://github.com/BinaryMuse/timex",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BinaryMuse/timex.git"
+  },
   "keywords": [
     "timer"
   ],
