@@ -1,7 +1,7 @@
 {
   "name": "timex",
   "main": "build/timex.min.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "https://github.com/BinaryMuse/timex",
   "authors": [
     "BinaryMuse <brandon@brandontilley.com>"
