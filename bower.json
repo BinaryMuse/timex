@@ -4,7 +4,7 @@
   "version": "1.0.4",
   "homepage": "https://github.com/BinaryMuse/timex",
   "authors": [
-    "BinaryMuse <brandon@brandontilley.com>"
+    "Michelle Tilley <michelle@michelletilley.net>"
   ],
   "description": "Small timer module using requestAnimationFrame and performance.now/process.hrtime when available",
   "keywords": [
