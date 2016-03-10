@@ -6,6 +6,7 @@ function Timer() {
   this.currentTime = 0;
   this.lastTick = null;
   this.callbacks = [];
+  this._rate = 1;
 
   this._tick = this._tick.bind(this);
 }
@@ -32,6 +33,14 @@ Timer.prototype.pause = function() {
   this.running = false;
 };
 
+Timer.prototype.setRate = function(rate) {
+  this._rate = rate;
+};
+
+Timer.prototype.getRate = function() {
+  return this._rate;
+};
+
 Timer.prototype._startTimer = function() {
   this._tick();
 };
@@ -44,7 +53,7 @@ Timer.prototype._tick = function() {
   } else {
     var thisTick = now(),
         delta = thisTick - this.lastTick;
-    this.currentTime = this.currentTime + delta;
+    this.currentTime = this.currentTime + delta * this._rate;
     this.lastTick = thisTick;
   }
 

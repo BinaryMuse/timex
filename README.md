@@ -42,6 +42,14 @@ Pauses the timer.
 
 Sets the timer's current time (in milliseconds).
 
+**`Timex#getRate()`**
+
+Returns the timer's current rate. Defaults to `1  `.
+
+**`Timex#setRate(rate)`**
+
+Sets the timer's rate. The rate affects how the time is calculated, not how often the timer ticks. For example, setting `rate` to `0.5` makes the timer increment time twice as slowly, but the ticks will occur just as often as before.
+
 **`Timex#register(function(time){})`**
 
 Registers a callback that gets called each time the timer ticks. The callback receives the current time of the timer as its only argument.
